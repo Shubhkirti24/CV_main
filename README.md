@@ -2,12 +2,12 @@
 # Part 1
 
 ### Aim
-The goal for this step was to take a specific input image and create a method to denoise it. The provided image to denoise was a "mysteriously noisy" picture of a handsom bird. The additional challenge was to identify the particular noise casuing factor and after finding a way to localize the region.  Initially we tried a mean filter approach to denoise but that didnt provide good enough results so we shifted to using fourier transform to smooth out the image.
+The goal for this step was to take a specific input image and create a method to denoise it. The provided image to denoise was a "mysteriously noisy" picture of a handsome bird. The additional challenge was to identify the particular noise casuing factor and after finding a way to localize the region.  Initially we tried a mean filter approach to denoise but that didnt provide good enough results so we shifted to using fourier transform to smooth out the image.
 
 ### Given data
 A Noisy image obtained due to image transformations.
 
-![alt_text](https://github.iu.edu/cs-b657-sp2023/shubpras-rifhall-arsivak-kaur94-a1/blob/75a07ebbb269c3b57f8b09060fde1c1aa85a6228/part0/noisy_pichu.png)
+![alt_text](https://github.com/Shubhkirti24/CV_main/blob/main/Part_1/noisy_pichu.png)
 
 ### Implementation
 For part 0 we our implementation starts by taking the input image and then grey scale it. Then take the fourier transform of that image and visualize it in the frequency domain. In there you would be able to see the noise which causes the distortions in the supposed image. Apply a patch to the area to cover the noise in the original image after manually trying to approximate its position. 
@@ -28,8 +28,7 @@ Prior to using the maunal [crop-out] method, mean or gaussian filtering was trie
 The image quality was reduced by the median/Gaussian filtering used to reduce noise. 
 
 ### Result:
-![alt_text](https://github.iu.edu/cs-b657-sp2023/shubpras-rifhall-arsivak-kaur94-a1/blob/4cc3acf9406024ae10f8c1e6bfe5cc099c1875ae/part0/Inverse.png)
-
+![alt_text](https://github.com/Shubhkirti24/CV_main/blob/main/Part_1/fourier_noise.png)
 
 
 
@@ -66,7 +65,8 @@ We were able to detect the staff lines in the test image given.<br />
 This was the original image:<br />
 <img width="261" alt="sample-input" src="https://media.github.iu.edu/user/20858/files/00b4a9d0-9d16-459b-a845-f5e50ab47059"><br />
 This is the output image (after going through the algorithm, staff lines are detected by highlighting in red color):<br />
-![detected_staff](https://media.github.iu.edu/user/20858/files/d78f1481-36d8-4fe8-bfef-4187d8394265)
+
+![detected_staff](https://github.com/Shubhkirti24/CV_main/blob/main/Part_2/detected_staff.png)
 
 ### Observations:
 1. Canny edge detection significantly reduces the noise in the data and thus helps in easier identification of lines using hough transformation.
@@ -123,7 +123,7 @@ A nested for-loop is used to iterate over each pixel of the input image, startin
 
 # Example of template matching (intermediate result for detection) result in image2
 
-![alt_text](https://github.iu.edu/cs-b657-sp2023/shubpras-rifhall-arsivak-kaur94-a1/blob/4cc3acf9406024ae10f8c1e6bfe5cc099c1875ae/part2/OP_music2.png)
+![alt_text](https://github.com/Shubhkirti24/CV_main/blob/main/Part_3/OP_music2.png)
 
 #### Note Classification
 
@@ -153,8 +153,7 @@ The code identifies the notes with varied measures of success. Especially the no
 - Note Annotation : Annotating/Classifying the notes was a harder task. We would love to see how CNN / SVM perfroms on the dataset, specially for the warped images.
 
 # Final Output obtained:
-![alt_text](https://github.iu.edu/cs-b657-sp2023/shubpras-rifhall-arsivak-kaur94-a1/blob/4cc3acf9406024ae10f8c1e6bfe5cc099c1875ae/part2/OP_file.png)
-
+![alt_text](https://github.com/Shubhkirti24/CV_main/blob/main/Part_3/OP_file.png)
 ### References:
 
 - https://pillow.readthedocs.io/en/stable/reference/
