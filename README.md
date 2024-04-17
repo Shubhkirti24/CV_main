@@ -29,7 +29,7 @@ Prior to using the maunal [crop-out] method, mean or gaussian filtering was trie
 The image quality was reduced by the median/Gaussian filtering used to reduce noise. 
 
 ### Result:
-![alt_text](https://github.com/Shubhkirti24/CV_main/blob/main/Part_1/fourier_noise.png)
+![alt_text](https://github.com/Shubhkirti24/CV_main/blob/main/Part_1/Inverse.png)
 
 
 
