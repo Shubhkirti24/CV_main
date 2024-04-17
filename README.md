@@ -19,7 +19,8 @@ The Fourier domain may become noisier as a result of this shift in frequency con
 # Remedy explained:
 cropped out the obtained noisy area in the image to get the original image. - can be explained as manual cropping
 
-![alt_text](https://github.iu.edu/cs-b657-sp2023/shubpras-rifhall-arsivak-kaur94-a1/blob/4cc3acf9406024ae10f8c1e6bfe5cc099c1875ae/part0/fourier_noise.png)
+
+![alt_text](https://github.com/Shubhkirti24/CV_main/blob/main/Part_1/fourier_noise.png)
 
 Tricky Part:
 Prior to using the maunal [crop-out] method, mean or gaussian filtering was tried in order to determine the best acceptable method to eliminate the current noise. The goal was to identify the source and region of the noise in the fourier domain. 
